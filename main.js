@@ -19,27 +19,27 @@ Bonus : Mesurer le temps que met le chrono pour écouler 5 min. Même chose pour
 class Chrono {
 	constructor() {
 		this.currentTime = 0;
-    this.remaining = 0;
+        this.remaining = 0;
 	}
 
 	start() {
-    let myThis = this;
-    let startTime = new Date().getTime();
+        let myThis = this;
+        let startTime = new Date().getTime();
 		this.intervalID = setInterval(function(){
-      myThis.currentTime = Math.floor((new Date().getTime() - startTime)/1000) + myThis.remaining;
-      console.log(myThis.currentTime);
-    }, 1000);
+            myThis.currentTime = Math.floor((new Date().getTime() - startTime)/1000) + myThis.remaining;
+            console.log(myThis.currentTime);
+        }, 1000);
 	}
 
 	pause() {
-    this.remaining = this.currentTime;
-    clearInterval(this.intervalID);
-  }
+        this.remaining = this.currentTime;
+        clearInterval(this.intervalID);
+    }
 
 	stop() {
-    clearInterval(this.intervalID);
-    this.currentTime = 0;
-    this.remaining = 0;
+        clearInterval(this.intervalID);
+        this.currentTime = 0;
+        this.remaining = 0;
 	}
 }
 
