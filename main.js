@@ -48,9 +48,13 @@ mychrono = new Chrono();
 mychrono.start();
 
 /* Test pause method */
-/* var machin1 = setTimeout(function(){mychrono.pause()}, 5000);
-var machin2 = setTimeout(function(){console.log("Current time:" + mychrono.currentTime);}, 8000); */
+/* var machin1 = setTimeout(function(){
+  mychrono.pause();
+  console.log("Current time:" + mychrono.currentTime);
+  }, 5000);
 
 /* Test stop method */
-/* var machin1 = setTimeout(function(){mychrono.stop()}, 5000);
-var machin2 = setTimeout(function(){console.log("Current time: " + mychrono.currentTime);}, 8000); */
+/* var machin1 = setTimeout(function(){
+    mychrono.stop();
+    console.log("Current time: " + mychrono.currentTime);
+    }, 5000); */
