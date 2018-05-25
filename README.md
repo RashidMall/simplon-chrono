@@ -10,9 +10,7 @@ une méthode stop()
 
 une propriété currentTime
 
-Indices :
+Indices : setTimeout setInterval
 
-setTimeout
-setInterval
 Bonus : Mesurer le temps que met le chrono pour écouler 5 min. Même chose pour 10 min. Comment réduire l'écart entre le temps affiché et le temps réel? 
 */
